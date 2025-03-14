@@ -13,6 +13,7 @@ cd QuanLyAoKhoac
 ```
 Start the server:
 - Start Debugging
+- F5
 
 ## Technologies Used
 - HTML, CSS
