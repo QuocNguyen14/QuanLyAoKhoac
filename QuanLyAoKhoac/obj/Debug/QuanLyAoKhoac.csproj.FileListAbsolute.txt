@@ -1,0 +1,7 @@
+D:\TL\Nam3-HK1\WebLab 1-10-2024\QuanLyAoKhoac\QuanLyAoKhoac\bin\QuanLyAoKhoac.dll.config
+D:\TL\Nam3-HK1\WebLab 1-10-2024\QuanLyAoKhoac\QuanLyAoKhoac\bin\QuanLyAoKhoac.dll
+D:\TL\Nam3-HK1\WebLab 1-10-2024\QuanLyAoKhoac\QuanLyAoKhoac\bin\QuanLyAoKhoac.pdb
+D:\TL\Nam3-HK1\WebLab 1-10-2024\QuanLyAoKhoac\QuanLyAoKhoac\obj\Debug\QuanLyAoKhoac.csprojResolveAssemblyReference.cache
+D:\TL\Nam3-HK1\WebLab 1-10-2024\QuanLyAoKhoac\QuanLyAoKhoac\obj\Debug\QuanLyAoKhoac.dll
+D:\TL\Nam3-HK1\WebLab 1-10-2024\QuanLyAoKhoac\QuanLyAoKhoac\obj\Debug\QuanLyAoKhoac.pdb
+D:\TL\Nam3-HK1\WebLab 1-10-2024\QuanLyAoKhoac\QuanLyAoKhoac\bin\FredCK.FCKeditorV2.dll

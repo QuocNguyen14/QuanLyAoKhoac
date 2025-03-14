@@ -1,0 +1,206 @@
+﻿/* Style the overall form container */
+#form1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Style for the navigation link */
+.gridSanPham li {
+    list-style-type: none;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.gridSanPham li a {
+    text-decoration: none;
+    color: #0056b3;
+    background-color: #e0efff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-weight: bold;
+}
+
+.gridSanPham li a:hover {
+    background-color: #0056b3;
+    color: #ffffff;
+}
+
+/* Style the DataGrid container */
+.gridSanPham {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+    width: 100%;
+}
+
+/* Style the DataGrid table */
+#gridSanPham {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+/* Style the header row */
+#gridSanPham th {
+    background-color: #0056b3;
+    color: #ffffff;
+    text-align: left;
+    padding: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    letter-spacing: 0.05em;
+    border-radius: 8px 8px 0 0;
+}
+
+/* Style the data cells */
+#gridSanPham td {
+    background-color: #f9fbff;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    color: #333;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+/* Hover effect for rows */
+#gridSanPham tr:hover td {
+    background-color: #e6f3ff;
+}
+
+/* Style images */
+#gridSanPham img {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+#gridSanPham img:hover {
+    transform: scale(1.05);
+}
+
+/* Style the LinkButton for the product name */
+#gridSanPham a {
+    color: #0056b3;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+#gridSanPham a:hover {
+    color: #d9534f;
+    text-decoration: underline;
+}
+
+/* Delete button style */
+#gridSanPham .lnkDelete {
+    color: #d9534f;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+#gridSanPham .lnkDelete:hover {
+    text-decoration: underline;
+    color: #c9302c;
+}
+
+/* Pager styles */
+.pager {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.pager a, .pager span {
+    margin: 0 6px;
+    color: #0056b3;
+    text-decoration: none;
+    padding: 10px 16px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pager a:hover {
+    background-color: #0056b3;
+    color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.pager span {
+    background-color: #0056b3;
+    color: #ffffff;
+    border: 1px solid #0056b3;
+}
+/*admin*/
+.Admin {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.Admin h1 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.Admin input[type="text"],
+.Admin input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.Admin input[type="text"]:focus,
+.Admin input[type="password"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.Admin .aspButton {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.Admin .aspButton:hover {
+    background-color: #0056b3;
+}
+
+.Admin label {
+    font-size: 14px;
+    color: #555;
+}
+
+.Admin br {
+    margin-bottom: 5px;
+}
+
+

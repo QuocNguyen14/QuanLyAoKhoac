@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 9.5" name="QuanLyAoKhoac">
+  <DataContextMoniker Name="/QuanLyAoKhoacDataContext" />
+  <nestedChildShapes>
+    <classShape Id="c47773cb-a857-40aa-a935-33c2b0cde77f" absoluteBounds="1.625, 1, 2, 1.3862939453125">
+      <DataClassMoniker Name="/QuanLyAoKhoacDataContext/CauHinh" />
+      <nestedChildShapes>
+        <elementListCompartment Id="79c6ded3-88c3-4c4c-a77a-680e3530dacf" absoluteBounds="1.6400000000000001, 1.46, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="69160f76-c2cc-4f64-a031-ed638facb01b" absoluteBounds="4.75, 2.125, 2, 1.3862939453125">
+      <DataClassMoniker Name="/QuanLyAoKhoacDataContext/ChiTiet" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0a725271-6e09-4faa-a974-08f8fd011f23" absoluteBounds="4.765, 2.585, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3fdc1732-fb45-43e4-8af5-f34588b968f1" absoluteBounds="1.5, 3.5, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/QuanLyAoKhoacDataContext/DanhMucSP" />
+      <nestedChildShapes>
+        <elementListCompartment Id="54ba7e4f-16e7-41da-8dbb-365a6a1671af" absoluteBounds="1.5150000000000001, 3.96, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a6f6e965-a369-4705-9f05-98711dfb03db" absoluteBounds="7, 1.375, 2, 2.5401025390625">
+      <DataClassMoniker Name="/QuanLyAoKhoacDataContext/DatHang" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1bc055a4-796d-4c32-b63d-8a83259f19ed" absoluteBounds="7.015, 1.835, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8cf1fc4e-8087-47d7-a8ea-3820f150fe26" absoluteBounds="4.375, 4, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/QuanLyAoKhoacDataContext/LienHe" />
+      <nestedChildShapes>
+        <elementListCompartment Id="466b038e-e44e-4143-963d-39525cc4ed53" absoluteBounds="4.39, 4.46, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="15d700c0-4052-4327-8899-895ee543dad8" absoluteBounds="7.5, 5.5, 2, 3.6939111328124996">
+      <DataClassMoniker Name="/QuanLyAoKhoacDataContext/SanPham" />
+      <nestedChildShapes>
+        <elementListCompartment Id="54228b61-6161-4900-9ab8-5208f8990ee8" absoluteBounds="7.515, 5.96, 1.9700000000000002, 3.1339111328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.5 : 5.07859537760417); (2.5 : 7.64345540364583); (7.5 : 7.64345540364583)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/QuanLyAoKhoacDataContext/DanhMucSP/DanhMucSP_SanPham" />
+      <nodes>
+        <classShapeMoniker Id="3fdc1732-fb45-43e4-8af5-f34588b968f1" />
+        <classShapeMoniker Id="15d700c0-4052-4327-8899-895ee543dad8" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

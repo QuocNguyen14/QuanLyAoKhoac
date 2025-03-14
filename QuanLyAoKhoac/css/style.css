@@ -1,0 +1,642 @@
+﻿:root{
+    --main-text-font:Arial, Helvetica, sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Body------------------------------------------------------------------------------------------*/
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.container-menu{
+    margin: 0px auto;
+    max-width: 960px;
+}
+body{
+    max-width: 1256px;
+    margin: auto;
+}
+/*header----------------------------------------------------*/
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000;
+    border-bottom: 1px solid #f5f5f5;
+    transition: all 0.5s ease-in-out;
+    align-items: center;
+    justify-content: space-between;   
+}
+header.sticky{
+    background: #fff;
+    opacity: 0.9;
+    /*padding: 3px 0px 3px;*/
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+}
+header.sticky .others li>input{
+    color: #000;
+    border-bottom: 1px solid #000;
+    background-color: #fff;
+}
+header.sticky #main-menu a{
+    color: #000;
+}
+header.sticky ul#main-menu>li>ul.sub-menu{
+    background-color: #fff;
+}
+header.sticky ul#main-menu>li>ul.sub-menu a{
+    color: #000;
+}
+header.sticky .logo{
+    color: #000;
+    transition: all 0.5s ease-in-out;
+}
+header.sticky .others li>a{
+    color: #000;
+    transition: all 0.5s ease-in-out;
+}
+header.sticky .bxs-user{
+    color:#000;
+    transition: all 0.5s ease-in-out;
+}
+.inner-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ul#main-menu li:hover .sub-menu{
+    visibility:visible;
+    top: 60px;
+}
+ul#main-menu>li>ul.sub-menu{
+    background-color: black;
+    position: absolute;
+    display: block;
+    border:1px solid #ccc;
+    visibility:hidden;
+    top: 54px;
+    transition:0.2s;
+}
+ul#main-menu>li>ul.sub-menu>li>a{
+    color:white;
+    padding:10px;
+}
+ul#main-menu{
+    display: flex;
+    padding: 10px 90PX;
+}
+ul#main-menu a{
+    text-transform: uppercase;
+    padding: 10px 20px;
+    color: white;
+    display: block;
+}
+#main-menu>li>a{
+    transition: all 0.5s ease-in-out;
+}
+#main-menu>li>a:hover{
+    font-size:medium;
+    transform:scale(1.06);
+    transition: 0.3s;
+}
+.sub-menu>li>a:hover{
+    font-size:medium;
+    transform:scale(1.06);
+    transition: 0.3s;
+}
+.logo{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 30px;
+    letter-spacing: 2px;
+    display: block;
+    transition: all 0.5s ease-in-out;
+}
+.others{
+    flex: 1;
+    display: flex;
+    margin-left: 14px;
+    margin-top: 10px;
+    color: #000;
+    outline: none;
+    transition: all 0.5s ease-in-out;
+}
+.others  li{
+    padding: 0 12px;
+}
+.others  li:first-child{
+    position: relative;
+}
+.others  li:first-child input{
+    height: 100%;
+    width: 200px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background-color: #000;
+    color: #fff;
+    outline: none;
+    transition: all 0.5s ease-in-out;
+}
+.others  li:first-child a{
+    position: absolute;
+    right: 15px;
+    top:1px;
+    transition: all 0.5s ease-in-out;
+}
+.others i{
+    background-color: white;
+}
+.others  li>a{
+    color: white;
+    margin-top: 9px;
+    transition: all 0.5s ease-in-out;
+}
+.bxs-user{
+    font-size:18px;
+    color:#fff;
+    transition: all 0.5s ease-in-out;
+}
+/*----------banner*/
+.carousel-container {
+    padding-top: 100px;
+    margin-left: 250px;
+    margin-right: auto;
+    left: 10px;
+    width: 900px;
+    overflow: hidden;
+}
+#slider {
+    display: flex;
+}
+/*main------------------------------------------------------------------------------------------*/
+.content{
+    margin: 50px;
+    padding: 100px 50px;
+    font-size: 12px;
+    line-height: 25px;
+    color: #000;
+    text-transform: uppercase;
+    background: #e3e3e3;
+    display: block;
+    border-radius: 50px;
+}
+.content span{
+    font-weight: bold;
+    color: #000;
+}
+.item-title{
+    font-size: 20px;
+    color: #000;
+    text-decoration: none;
+}
+.item-img{
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+}
+.list-product{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+/*------------------list-page*/
+.text-center {
+    text-align: center !important;
+}
+.site-block-27 ul, .site-block-27 ul li {
+    padding: 0;
+    margin: 0;
+}
+.pagination {
+    display: block;
+}
+/*------------------active*/
+.site-block-27 ul li {
+    margin-right: 4px;
+}
+.site-block-27 ul li {
+    display: inline-block;
+    margin-bottom: 4px;
+}
+.site-block-27 ul li.active a, .site-block-27 ul li.active span {
+    background: #ee4266;
+    color: #fff;
+    border: 1px solid transparent;
+}
+.site-block-27 ul li a, .site-block-27 ul li span {
+    text-align: center;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 28px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+.site-block-27 ul li a, .site-block-27 ul li span {
+    text-align: center;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+}
+/*footer-----------------------*/
+.container {
+    max-width: 1200px; /* Chiều rộng tối đa cho container */
+    margin: 0 auto; /* Căn giữa container */
+    padding: 40px; /* Khoảng cách bên trong container */
+}
+
+.bg-gradient-to-l {
+    background-image: linear-gradient(to right, #b8e2e9, #b8e2e9); /* Gradient nền */
+}
+
+.grid {
+    display: grid; /* Sử dụng lưới */
+    grid-template-columns: repeat(4, 1fr); /* 4 cột */
+    gap: 20px; /* Khoảng cách giữa các cột */
+}
+
+.col-span-1 {
+    background-color: white; /* Màu nền trắng cho mỗi thành viên */
+    border-radius: 10px; /* Bo tròn các góc */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+    transition: transform 0.2s; /* Hiệu ứng khi hover */
+}
+
+.col-span-1:hover {
+    transform: translateY(-5px); /* Đẩy lên một chút khi hover */
+}
+
+.w-1-3 {
+    width: 60%; /* Chiều rộng của ảnh */
+    height: 50%;
+}
+
+.rounded-full {
+    border-radius: 50%; /* Để ảnh thành hình tròn */
+}
+
+.overflow-hidden {
+    overflow: hidden; /* Ẩn phần vượt ra ngoài */
+}
+
+.text-center {
+    text-align: center; /* Căn giữa văn bản */
+    margin-top: 10px; /* Khoảng cách trên văn bản */
+}
+.rounded-full {
+    border-radius: 60%; /* Để bo tròn ảnh thành hình tròn */
+    width: 94px;
+    height: 104px; /* Chiều cao của ảnh */
+    object-fit: cover; /* Để đảm bảo ảnh không bị biến dạng */
+    margin-left: 31%;
+}
+/*cartegory--------------------------------------------*/
+.cartegory-top p{
+    font-family: var(--main-text-font);
+    margin: 0 12px;
+    font-size: 12px;
+}
+.cartegory-left{
+    width: 20%;
+}
+.cartegory-right{
+    width: 80%;
+}
+.cartegory-right-top-item:first-child{
+    flex: 2;
+    font-size: 16px;
+    font-family: var(--main-text-font);
+    font-weight: bold;
+}
+.cartegory-right-top-item{
+    flex: 1;
+    padding: 0 12px;
+}
+.cartegory-right-top-item button{
+    width: 100%;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    border: 1px solid #dddddd;
+    cursor: pointer;
+}
+.cartegory-right-top-item select{
+    width: 100%;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    border: 1px solid #dddddd;
+    cursor: pointer;
+}
+.cartegory-right-content{
+    margin-top: 20px;
+    justify-content: space-between;
+}
+.cartegory-right-content-item{
+    width: calc(25% -12px);
+    text-align: center;
+    padding: 12px 0;
+}
+.cartegory-right-content-item h1{
+    font-size: 11px;
+    font-family: var(--main-text-font);
+    margin-top: 6px;
+    color: #333333;
+}
+.cartegory-left ul li{
+    padding: 12px 0;
+}
+.cartegory-left ul li a{
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: var(--main-text-font);
+}
+.cartegory-left ul li ul li{
+    padding-left: 10px;
+}
+.cartegory-left-li ul{
+    display: none;
+}
+.cartegory-left-li.block ul{
+    display: block;
+}
+.cartegory-left ul li ul li a{
+    color: #333333;
+    font-size: 12px;
+}
+/*product------------------------------------------*/
+.product{
+    padding: 20px 0;
+}
+.product-top{
+    margin-bottom: 30px;
+}
+.product-top p{
+    font-family: var(--main-text-font);
+    padding: 0 12px;
+    font-size: 12px;
+}
+.product-content-left{
+    width: 50%;
+}
+
+.product-content-left-big-img{
+    width: 80%;
+    padding-right: 20px;
+}
+.product-content-left-big-img img{
+    width: 100%;
+}
+.product-content-left-small-img{
+    width: 20%;
+}
+.product-content-left-small-img img{
+    width: 100%;
+    cursor: pointer;
+}
+.product-content-right{
+    width: 50%;
+    padding-left: 20px;
+}
+.product-content-right-product-name h1{
+    font-family: var(--main-text-font);
+    font-size: 16px;
+}
+.product-content-right-product-name p{
+    color: #cccccc;
+    font-size: 12px;
+}
+.product-content-right-product-name-price{
+    margin: 12px 0;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: var(--main-text-font);
+}
+.size span{
+    display: inline-block;
+    padding: 3px 6px;
+    border: 1px solid #dddddd;
+    margin: 12px 10px 12px 0;
+    font-size: 12px;
+    cursor: pointer;
+}
+.quantity{
+    display: flex;
+    margin-bottom: 20px;
+}
+.quantity input{
+    width: 35px;
+    padding-left: 3px;
+}
+.quantity button a{
+    color:#fff;
+}
+.product-content-right-product-buttom button{
+    width: 150px;
+    height: 40px;
+    display: block;
+    margin: 20px 0 12px;
+}
+.product-content-right-product-buttom button>p>a{
+    color:black;
+}
+.product-content-right-product-buttom button>p>a:hover{
+    color:red;
+}
+.product-content-right-product-buttom button:first-child{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #fff;
+    border: 2px solid #000;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.product-content-right-product-buttom button:first-child:hover{
+    background-color:yellow;
+    color: #fff;
+}
+.product-content-right-product-buttom button:last-child{
+    border: 2px solid #BF8A49;
+    color:#BF8A49 ;
+    background-color: #fff;
+    cursor: pointer;
+}
+.product-content-right-product-icon{
+    display: flex;
+}
+.product-content-right-product-icon-item{
+    display: flex;
+    margin-right: 12px;
+    justify-content: center;
+    align-items: center;
+}
+.product-content-right-product-icon-item i{
+    font-size: 12px;
+    margin-right: 6px;
+}
+.product-content-right-bottom{
+    padding-top: 20px;
+    position: relative;    
+    border-top: 1px solid #dddddd;
+}
+.product-content-right-bottom-top{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #dddddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    top: -15px;
+    left: 50%;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+.product-content-right-bottom-content-title{
+    border-bottom: 2px solid #dddddd;
+}
+.product-content-right-bottom-content-title-item{
+    padding: 6px;
+    cursor: pointer;
+    margin-right: 6px;
+}
+.product-content-right-bottom-content-title-item p{
+    font-family: var(--main-text-font);
+    font-size: 12px;
+}
+.product-content-right-bottom-content{
+    padding-top: 30px;
+
+}
+.product-content-right-bottom-content{
+    font-family: var(--main-text-font);
+    font-size: 12px;
+}
+.product-content-right-bottom-content-uudai{
+    display: none;
+}
+.activeB{
+    display: none;
+}
+/*cartegory-menu*/
+.category-menu {
+    background-color: #f5f5f5;
+    padding: 20px;
+    text-align: center;
+}
+
+.category-menu h2 {
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: #333;
+}
+
+.category-menu ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.category-menu li {
+    margin: 0 15px;
+}
+
+.category-menu li a {
+    text-decoration: none;
+    color: #007BFF; /* Màu chữ */
+    font-weight: bold;
+}
+
+.category-menu li a:hover {
+    text-decoration: underline; /* Hiệu ứng hover */
+}
+/*productt*/
+/* Container styling */
+.containerr {
+    max-width: 600px; /* Set a maximum width for the form */
+    margin: 50px auto; /* Center the container */
+    padding: 20px; /* Padding inside the container */
+    background: #ffffff; /* White background for the form */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 8px; /* Rounded corners */
+}
+
+/* Product top styling */
+.productt-top {
+    margin-bottom: 20px; /* Space below the header */
+    text-align: center; /* Center text within the header */
+}
+
+/* Header text styling */
+.productt-top p {
+    color: #333; /* Dark text color for readability */
+    font-size: 18px; /* Font size for header */
+    margin: 0; /* Remove default margin */
+}
+
+/* Centered text div styling */
+div[style*="text-align:center"] {
+    text-align: center; /* Center text */
+}
+
+/* Input fields styling */
+div[style*="text-align:center"] input[type="text"] {
+    width: 80%; /* Set width to 80% */
+    padding: 10px; /* Padding for comfort */
+    margin-top: 10px; /* Space above input fields */
+    margin-bottom: 10px; /* Space below input fields */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    box-sizing: border-box; /* Include padding and border in element's total width */
+}
+
+/* Button styling */
+.send {
+    margin-top: 20px; /* Space above the button */
+}
+
+.send input[type="submit"],
+.send input[type="button"],
+.send button,
+.send .asp-button {
+    background-color: #28a745; /* Green background */
+    color: #fff; /* White text color */
+    padding: 10px 20px; /* Padding for the button */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size for button text */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Button hover effect */
+.send input[type="submit"]:hover,
+.send input[type="button"]:hover,
+.send button:hover,
+.send.asp-button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+

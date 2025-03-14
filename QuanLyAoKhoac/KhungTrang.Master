@@ -1,0 +1,84 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="KhungTrang.master.cs" Inherits="QuanLyAoKhoac.KhungTrang" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Dự án website bán áo khoác nhóm 1</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <style>
+        .Antimkiem{
+            visibility:hidden;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <!--container-menu-->
+    <div id="wrapper">
+        <header>
+            <div class="inner-header container-menu">
+                <a href="Home.aspx" class="logo">a-l-l-n</a>
+                <nav>
+                    <ul id="main-menu">
+                        <li><a href="Home.aspx">TRANG CHỦ</a></li>
+                        <li><a href="">SẢN PHẨM</a>
+                        
+                            <ul class="sub-menu">    
+                                <%for (int i=0; i<ListDM.Count;i++)
+                                { %>     
+                                <li><a href='<%="DanhMucSanPham.aspx?MaDm="+ListDM[i].MaDm.ToString() %>'><%=ListDM[i].TenDm%></a></li>
+                                 <%} %>                    
+                            </ul>
+                           
+                        </li>
+                        <li><a href="#">LIÊN HỆ</a></li>
+                </nav>
+                <div id="others" class="others">
+                    <asp:Panel ID="panel1" runat="server" DefaultButton="btnSubmit">
+                        <asp:TextBox ID="txtTimKiem" runat="server" CssClass="others"></asp:TextBox>
+                        <asp:Button ID="btnSubmit" Text="Submit" CssClass="Antimkiem" runat="server" OnClick="btnSubmit_Click" />
+                    </asp:Panel>
+                    <%--<li><input placeholder="Tìm Kiếm..." type="text"><a class="fas fa-search" href="#"></a></li>--%>
+                    <li><a class="fa fa-shopping-bag" href="#"></a></li>
+                </div>
+                <li><a href="QuanTriSanPham.aspx"><i class='bx bxs-user'></i></a></li>
+            </div>
+        </header>
+    </div>
+    <!-- slider - banner section -->
+    <div class="carousel-container">
+        <img id="slider" src="img/7.jpg">
+    </div>
+        
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        
+    <!-- footer -->
+    <footer class="container mx-auto rounded-t-3xl overflow-hidden bg-gray-900 text-white">
+    <div class="bg-gradient-to-l from-secondary-500 to-primary-600 py-4 text-center text-lg font-semibold">
+        Dự án website bán hàng
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 py-6 px-4 text-center">
+        <div class="flex flex-col items-center">
+            <div class="w-24 h-24 rounded-full overflow-hidden border-2 border-white shadow-lg">
+                <img  class="w-24 h-24 object-cover rounded-full border-2 border-white shadow-lg"  src="./img/avt.png" alt="Nguyễn Quốc Nguyên" />
+            </div>
+            <h3 class="mt-3 text-lg font-medium">Nguyễn Quốc Nguyên</h3>
+            <p class="text-sm text-gray-300">Designer</p>
+        </div>
+
+    </div>
+    </footer>
+
+    <script src="./js/index.js"></script>
+    </form>
+</body>
+</html>

@@ -1,0 +1,424 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{15CAF911-B127-4F76-A6B8-BC293AF63742}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QuanLyAoKhoac</RootNamespace>
+    <AssemblyName>QuanLyAoKhoac</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FredCK.FCKeditorV2">
+      <HintPath>fckeditor\FredCK.FCKeditorV2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CapNhatSanPham.aspx" />
+    <Content Include="DangNhap.aspx" />
+    <Content Include="KhungTrang.Master" />
+    <Content Include="LienHe.aspx" />
+    <Content Include="QuanLyAoKhoac.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>QuanLyAoKhoac.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ChiTietSanPham.aspx" />
+    <Content Include="css\gird.css" />
+    <Content Include="css\style.css" />
+    <Content Include="DanhMucSanPham.aspx" />
+    <Content Include="DatHangSanPham.aspx" />
+    <Content Include="Error.aspx" />
+    <Content Include="Home.aspx" />
+    <Content Include="img\3.png" />
+    <Content Include="img\4.jpg" />
+    <Content Include="img\5.jpg" />
+    <Content Include="img\7.jpg" />
+    <Content Include="img\banner1.png" />
+    <Content Include="img\imagesCT\ao1.1.jpg" />
+    <Content Include="img\imagesCT\ao1.2.jpg" />
+    <Content Include="img\imagesCT\ao1.3.jpg" />
+    <Content Include="img\imagesCT\ao1.4.jpg" />
+    <Content Include="img\imagesCT\ao10.1.jpg" />
+    <Content Include="img\imagesCT\ao10.2.jpg" />
+    <Content Include="img\imagesCT\ao10.3.jpg" />
+    <Content Include="img\imagesCT\ao10.4.jpg" />
+    <Content Include="img\imagesCT\ao11.1.jpg" />
+    <Content Include="img\imagesCT\ao11.2.jpg" />
+    <Content Include="img\imagesCT\ao11.3.jpg" />
+    <Content Include="img\imagesCT\ao11.4.jpg" />
+    <Content Include="img\imagesCT\ao12.1.jpg" />
+    <Content Include="img\imagesCT\ao12.2.jpg" />
+    <Content Include="img\imagesCT\ao12.3.jpg" />
+    <Content Include="img\imagesCT\ao12.4.jpg" />
+    <Content Include="img\imagesCT\ao13.1.jpg" />
+    <Content Include="img\imagesCT\ao13.2.jpg" />
+    <Content Include="img\imagesCT\ao13.3.jpg" />
+    <Content Include="img\imagesCT\ao13.4.jpg" />
+    <Content Include="img\imagesCT\ao14.1.jpg" />
+    <Content Include="img\imagesCT\ao14.2.jpg" />
+    <Content Include="img\imagesCT\ao14.3.jpg" />
+    <Content Include="img\imagesCT\ao14.4.jpg" />
+    <Content Include="img\imagesCT\ao15.1.jpg" />
+    <Content Include="img\imagesCT\ao15.2.jpg" />
+    <Content Include="img\imagesCT\ao15.3.jpg" />
+    <Content Include="img\imagesCT\ao15.4.jpg" />
+    <Content Include="img\imagesCT\ao16.1.jpg" />
+    <Content Include="img\imagesCT\ao16.2.jpg" />
+    <Content Include="img\imagesCT\ao16.3.jpg" />
+    <Content Include="img\imagesCT\ao16.4.jpg" />
+    <Content Include="img\imagesCT\ao17.1.jpg" />
+    <Content Include="img\imagesCT\ao17.2.jpg" />
+    <Content Include="img\imagesCT\ao17.3.jpg" />
+    <Content Include="img\imagesCT\ao17.4.jpg" />
+    <Content Include="img\imagesCT\ao18.1.jpg" />
+    <Content Include="img\imagesCT\ao18.2.jpg" />
+    <Content Include="img\imagesCT\ao18.3.jpg" />
+    <Content Include="img\imagesCT\ao18.4.jpg" />
+    <Content Include="img\imagesCT\ao19.1.jpg" />
+    <Content Include="img\imagesCT\ao19.2.jpg" />
+    <Content Include="img\imagesCT\ao19.3.jpg" />
+    <Content Include="img\imagesCT\ao19.4.jpg" />
+    <Content Include="img\imagesCT\ao2.1.jpg" />
+    <Content Include="img\imagesCT\ao2.2.jpg" />
+    <Content Include="img\imagesCT\ao2.3.jpg" />
+    <Content Include="img\imagesCT\ao2.4.jpg" />
+    <Content Include="img\imagesCT\ao20.1.jpg" />
+    <Content Include="img\imagesCT\ao20.2.jpg" />
+    <Content Include="img\imagesCT\ao20.3.jpg" />
+    <Content Include="img\imagesCT\ao20.4.jpg" />
+    <Content Include="img\imagesCT\ao21.1.jpg" />
+    <Content Include="img\imagesCT\ao21.2.jpg" />
+    <Content Include="img\imagesCT\ao21.3.jpg" />
+    <Content Include="img\imagesCT\ao21.4.jpg" />
+    <Content Include="img\imagesCT\ao22.1.jpg" />
+    <Content Include="img\imagesCT\ao22.2.jpg" />
+    <Content Include="img\imagesCT\ao22.3.jpg" />
+    <Content Include="img\imagesCT\ao22.4.jpg" />
+    <Content Include="img\imagesCT\ao23.1.jpg" />
+    <Content Include="img\imagesCT\ao23.2.jpg" />
+    <Content Include="img\imagesCT\ao23.3.jpg" />
+    <Content Include="img\imagesCT\ao23.4.jpg" />
+    <Content Include="img\imagesCT\ao24.1.jpg" />
+    <Content Include="img\imagesCT\ao24.2.jpg" />
+    <Content Include="img\imagesCT\ao24.3.jpg" />
+    <Content Include="img\imagesCT\ao24.4.jpg" />
+    <Content Include="img\imagesCT\ao25.1.jpg" />
+    <Content Include="img\imagesCT\ao25.2.jpg" />
+    <Content Include="img\imagesCT\ao25.3.jpg" />
+    <Content Include="img\imagesCT\ao25.4.jpg" />
+    <Content Include="img\imagesCT\ao26.1.jpg" />
+    <Content Include="img\imagesCT\ao26.2.jpg" />
+    <Content Include="img\imagesCT\ao26.3.jpg" />
+    <Content Include="img\imagesCT\ao26.4.jpg" />
+    <Content Include="img\imagesCT\ao27.1.jpg" />
+    <Content Include="img\imagesCT\ao27.2.jpg" />
+    <Content Include="img\imagesCT\ao27.3.jpg" />
+    <Content Include="img\imagesCT\ao27.4.jpg" />
+    <Content Include="img\imagesCT\ao28.1.jpg" />
+    <Content Include="img\imagesCT\ao28.2.jpg" />
+    <Content Include="img\imagesCT\ao28.3.jpg" />
+    <Content Include="img\imagesCT\ao28.4.jpg" />
+    <Content Include="img\imagesCT\ao29.1.jpg" />
+    <Content Include="img\imagesCT\ao29.2.jpg" />
+    <Content Include="img\imagesCT\ao29.3.jpg" />
+    <Content Include="img\imagesCT\ao29.4.jpg" />
+    <Content Include="img\imagesCT\ao3.1.jpg" />
+    <Content Include="img\imagesCT\ao3.2.jpg" />
+    <Content Include="img\imagesCT\ao3.3.jpg" />
+    <Content Include="img\imagesCT\ao3.4.jpg" />
+    <Content Include="img\imagesCT\ao30.1.jpg" />
+    <Content Include="img\imagesCT\ao30.2.jpg" />
+    <Content Include="img\imagesCT\ao30.3.jpg" />
+    <Content Include="img\imagesCT\ao30.4.jpg" />
+    <Content Include="img\imagesCT\ao4.1.jpg" />
+    <Content Include="img\imagesCT\ao4.2.jpg" />
+    <Content Include="img\imagesCT\ao4.3.jpg" />
+    <Content Include="img\imagesCT\ao4.4.jpg" />
+    <Content Include="img\imagesCT\ao5.1.jpg" />
+    <Content Include="img\imagesCT\ao5.2.jpg" />
+    <Content Include="img\imagesCT\ao5.3.jpg" />
+    <Content Include="img\imagesCT\ao5.4.jpg" />
+    <Content Include="img\imagesCT\ao6.1.jpg" />
+    <Content Include="img\imagesCT\ao6.2.jpg" />
+    <Content Include="img\imagesCT\ao6.3.jpg" />
+    <Content Include="img\imagesCT\ao6.4.jpg" />
+    <Content Include="img\imagesCT\ao7.1.jpg" />
+    <Content Include="img\imagesCT\ao7.2.jpg" />
+    <Content Include="img\imagesCT\ao7.3.jpg" />
+    <Content Include="img\imagesCT\ao7.4.jpg" />
+    <Content Include="img\imagesCT\ao8.1.jpg" />
+    <Content Include="img\imagesCT\ao8.2.jpg" />
+    <Content Include="img\imagesCT\ao8.3.jpg" />
+    <Content Include="img\imagesCT\ao8.4.jpg" />
+    <Content Include="img\imagesCT\ao9.1.jpg" />
+    <Content Include="img\imagesCT\ao9.2.jpg" />
+    <Content Include="img\imagesCT\ao9.3.jpg" />
+    <Content Include="img\imagesCT\ao9.4.jpg" />
+    <Content Include="img\imagesSP\ao1.jpg" />
+    <Content Include="img\imagesSP\ao10.jpg" />
+    <Content Include="img\imagesSP\ao11.jpg" />
+    <Content Include="img\imagesSP\ao12.jpg" />
+    <Content Include="img\imagesSP\ao13.jpg" />
+    <Content Include="img\imagesSP\ao14.jpg" />
+    <Content Include="img\imagesSP\ao15.jpg" />
+    <Content Include="img\imagesSP\ao16.jpg" />
+    <Content Include="img\imagesSP\ao17.jpg" />
+    <Content Include="img\imagesSP\ao18.jpg" />
+    <Content Include="img\imagesSP\ao19.jpg" />
+    <Content Include="img\imagesSP\ao2.jpg" />
+    <Content Include="img\imagesSP\ao20.jpg" />
+    <Content Include="img\imagesSP\ao21.jpg" />
+    <Content Include="img\imagesSP\ao22.jpg" />
+    <Content Include="img\imagesSP\ao23.jpg" />
+    <Content Include="img\imagesSP\ao24.jpg" />
+    <Content Include="img\imagesSP\ao25.jpg" />
+    <Content Include="img\imagesSP\ao26.jpg" />
+    <Content Include="img\imagesSP\ao27.jpg" />
+    <Content Include="img\imagesSP\ao28.jpg" />
+    <Content Include="img\imagesSP\ao29.jpg" />
+    <Content Include="img\imagesSP\ao3.jpg" />
+    <Content Include="img\imagesSP\ao30.jpg" />
+    <Content Include="img\imagesSP\ao4.jpg" />
+    <Content Include="img\imagesSP\ao5.jpg" />
+    <Content Include="img\imagesSP\ao6.jpg" />
+    <Content Include="img\imagesSP\ao7.jpg" />
+    <Content Include="img\imagesSP\ao8.jpg" />
+    <Content Include="img\imagesSP\ao9.jpg" />
+    <Content Include="img\imagesSP\banner1.png" />
+    <Content Include="img\imagesSP\lam.jpg" />
+    <Content Include="img\size.jpg" />
+    <Content Include="js\index.js" />
+    <Content Include="QuanTriSanPham.aspx" />
+    <Content Include="TimKiem.aspx" />
+    <Content Include="UserUL\ChiTietSanPhamCT.ascx" />
+    <Content Include="UserUL\DanhMucSanPhamCT.ascx" />
+    <Content Include="UserUL\DatHangCT.ascx" />
+    <Content Include="UserUL\HomeCT.ascx" />
+    <Content Include="UserUL\KetQuaTimKiemCT.ascx" />
+    <Content Include="UserUL\LienHeCT.ascx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CapNhatSanPham.aspx.cs">
+      <DependentUpon>CapNhatSanPham.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CapNhatSanPham.aspx.designer.cs">
+      <DependentUpon>CapNhatSanPham.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChiTietSanPham.aspx.cs">
+      <DependentUpon>ChiTietSanPham.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChiTietSanPham.aspx.designer.cs">
+      <DependentUpon>ChiTietSanPham.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DangNhap.aspx.cs">
+      <DependentUpon>DangNhap.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DangNhap.aspx.designer.cs">
+      <DependentUpon>DangNhap.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMucSanPham.aspx.cs">
+      <DependentUpon>DanhMucSanPham.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DanhMucSanPham.aspx.designer.cs">
+      <DependentUpon>DanhMucSanPham.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DatHangSanPham.aspx.cs">
+      <DependentUpon>DatHangSanPham.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DatHangSanPham.aspx.designer.cs">
+      <DependentUpon>DatHangSanPham.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Error.aspx.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Error.aspx.designer.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KhungTrang.Master.cs">
+      <DependentUpon>KhungTrang.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KhungTrang.Master.designer.cs">
+      <DependentUpon>KhungTrang.Master</DependentUpon>
+    </Compile>
+    <Compile Include="LienHe.aspx.cs">
+      <DependentUpon>LienHe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LienHe.aspx.designer.cs">
+      <DependentUpon>LienHe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuanLyAoKhoac.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuanLyAoKhoac.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="QuanTriSanPham.aspx.cs">
+      <DependentUpon>QuanTriSanPham.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QuanTriSanPham.aspx.designer.cs">
+      <DependentUpon>QuanTriSanPham.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TimKiem.aspx.cs">
+      <DependentUpon>TimKiem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TimKiem.aspx.designer.cs">
+      <DependentUpon>TimKiem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserUL\ChiTietSanPhamCT.ascx.cs">
+      <DependentUpon>ChiTietSanPhamCT.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserUL\ChiTietSanPhamCT.ascx.designer.cs">
+      <DependentUpon>ChiTietSanPhamCT.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserUL\DanhMucSanPhamCT.ascx.cs">
+      <DependentUpon>DanhMucSanPhamCT.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserUL\DanhMucSanPhamCT.ascx.designer.cs">
+      <DependentUpon>DanhMucSanPhamCT.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserUL\DatHangCT.ascx.cs">
+      <DependentUpon>DatHangCT.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserUL\DatHangCT.ascx.designer.cs">
+      <DependentUpon>DatHangCT.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserUL\HomeCT.ascx.cs">
+      <DependentUpon>HomeCT.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserUL\HomeCT.ascx.designer.cs">
+      <DependentUpon>HomeCT.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserUL\KetQuaTimKiemCT.ascx.cs">
+      <DependentUpon>KetQuaTimKiemCT.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserUL\KetQuaTimKiemCT.ascx.designer.cs">
+      <DependentUpon>KetQuaTimKiemCT.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserUL\LienHeCT.ascx.cs">
+      <DependentUpon>LienHeCT.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserUL\LienHeCT.ascx.designer.cs">
+      <DependentUpon>LienHeCT.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="QuanLyAoKhoac.dbml.layout">
+      <DependentUpon>QuanLyAoKhoac.dbml</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>55573</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:55573/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
